@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tourney&display=swap'); /* font-family: 'Tourney', cursive; */
+
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    line-height: 1;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+/* GENERAL */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+}
+
+/* HEADER */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: white;
+}
+
+header h1 {
+    padding: 10px 20px;
+    font-size: 28pt;
+    font-family: 'Tourney', cursive;
+    user-select: none;
+}
+
+.header-links {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+section {
+    padding: 100px 20px 20px 20px;
+    width: 100%;
+    height: 500px;
+}
+
+.botao {
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid 2px red;
+    color: red;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    user-select: none;
+}
+
+.botao:hover {
+    background-color: red;
+    color: black;
+    transition: 200ms;
+}
