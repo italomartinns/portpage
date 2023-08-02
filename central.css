@@ -36,11 +36,12 @@ body {
     padding: 10px 20px;
     text-transform: uppercase;
     user-select: none;
+    width: min-content;
 }
 .botao:hover {
     background-color: red;
     color: black;
-    transition: 200ms;
+    transition: 100ms;
 }
 
 .icone {
@@ -99,14 +100,14 @@ nav a {
 }
 nav a:hover {
     color: red;
-    transition: 200ms;
+    transition: 100ms;
 }
 
 /* SECTIONS */
 section h1 {
     font-weight: bold;
     font-size: 22pt;
-    margin: 8px 0px;
+    margin: 4px 0px;
 }
 section p {
     font-size: 14pt;
@@ -115,26 +116,29 @@ section p {
 
 .sec1 {
     align-items: center;
-    display: flex;
-    height: 600px;
-    justify-content: space-around;
+    justify-content: space-between;
+    display: flex;  
     max-width: 1920px;
-    width: 100%;
-    min-height: 850px;
+    min-height: 800px;
     background-image: url("pics/sec1_bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
+.sec1 .botao {
+    margin: 15px 0px;
+}
 
 .sec1-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0% 5%;
     padding: 40px;
-    max-width: 50%;
     background-color: rgba(0,0,0,0.9);
-    margin: 0px 100px;
     border-radius: 10px;
 }
 .sec1-box {
-    min-width: 50%;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -155,8 +159,8 @@ section p {
     background-color: red;
 }
 .sec2-article {
-    margin: -50px 20px 20px 20px;
-    border-radius: 20px;
+    margin: -60px 20px 20px 20px;
+    border-radius: 10px;
     max-height: fit-content;
     width: 300px;
     height: 300px;
@@ -164,11 +168,14 @@ section p {
     flex-direction: column;
     justify-content: flex-end;
     background-image: url("pics/sample.webp");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center center;
+    transition: 100ms;
 }
 .sec2-article:hover {
-    box-shadow: 0px 0px 4px 4px white;
+    box-shadow: 0px 0px 2px 4px white;
+    background-size: 110% 110%;
 }
 .sec2-article p {
     width: 100%;
@@ -176,7 +183,7 @@ section p {
     text-align: justify;
     background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.9) 10%);
 }
-.sec2-article-container {
+.sec2-article-links {
     font-family: 'Material Icons';
     display: flex;
     justify-content: space-evenly;
@@ -195,5 +202,15 @@ section p {
 }
 .sec2-icone:hover {
     color: red;
-    transition: 200ms;
+    transition: 100ms;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    font-size: 26pt;
+    margin: 30px
 }
