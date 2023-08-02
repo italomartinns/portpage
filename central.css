@@ -125,7 +125,7 @@ section p {
     background-size: cover;
 }
 .sec1 .botao {
-    margin: 15px 0px;
+    margin-top: 20px;
 }
 
 .sec1-content {
@@ -167,7 +167,7 @@ section p {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: url("pics/sample.webp");
+    background-color: purple;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
@@ -188,8 +188,10 @@ section p {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 15px;
-    border-radius: inherit;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
     background: rgba(0,0,0,0.9);
+    cursor: pointer;
 }
 .sec2-icone {
     font-family: 'Material Icons';
