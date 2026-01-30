@@ -155,8 +155,7 @@ section p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    background: #800000;
-    background-image: url("pics/ladrilhos.jpg");
+    background: #a00000;
 }
 .sec2-article {
     margin: -140px 20px 20px 20px;
