@@ -37,6 +37,7 @@ body {
     text-transform: uppercase;
     user-select: none;
     width: min-content;
+    white-space: nowrap;
 }
 .botao:hover {
     background-color: red;
@@ -116,8 +117,8 @@ section p {
 
 .sec1 {
     align-items: center;
-    justify-content: space-between;
-    display: flex;  
+    justify-content: space-around;
+    display: flex;
     max-width: 1920px;
     min-height: 800px;
     background-image: url("pics/sec1_bg.webp");
@@ -132,13 +133,11 @@ section p {
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin: 0% 5%;
     padding: 40px;
     background-color: rgba(0,0,0,0.9);
     border-radius: 10px;
 }
 .sec1-box {
-    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -156,25 +155,24 @@ section p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    background-color: red;
+    background: #800000;
+    background-image: url("pics/ladrilhos.jpg");
 }
 .sec2-article {
-    margin: -60px 20px 20px 20px;
+    margin: -140px 20px 20px 20px;
     border-radius: 10px;
-    max-height: fit-content;
     width: 300px;
     height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: purple;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
     transition: 100ms;
 }
 .sec2-article:hover {
-    box-shadow: 0px 0px 2px 4px white;
+    box-shadow: 0px 0px 2px 4px rgba(255, 255, 255, 0.5);
     background-size: 110% 110%;
 }
 .sec2-article p {
@@ -193,7 +191,7 @@ section p {
     background: rgba(0,0,0,0.9);
     cursor: pointer;
 }
-.sec2-icone {
+.round-icon {
     font-family: 'Material Icons';
     background-color: white;
     color: black;
@@ -202,9 +200,47 @@ section p {
     border-radius: 50%;
     user-select: none;
 }
-.sec2-icone:hover {
+.round-icon:hover {
     color: red;
     transition: 100ms;
+}
+
+.sec3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background: linear-gradient(135deg, #300000 40%, #a00000 100%);
+}
+.sec3 .contact-info {
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.centered-evenly-column {
+    text-align: center; 
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.sec3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.contact-line {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 footer {
@@ -213,6 +249,8 @@ footer {
 }
 
 footer p {
-    font-size: 26pt;
-    margin: 30px
+    font-size: 22pt;
+    font-family: 'Tourney';
+    user-select: none;
+    margin: 30px;
 }
