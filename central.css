@@ -155,10 +155,11 @@ section p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    background: #a00000;
+    background: #360000;
+    min-height: 500px;
 }
 .sec2-article {
-    margin: -140px 20px 20px 20px;
+    margin: 0px 20px 20px 20px;
     border-radius: 10px;
     width: 300px;
     height: 300px;
@@ -220,6 +221,7 @@ section p {
     justify-content: space-evenly;
     align-items: center;
     gap: 40px;
+    min-width: 400px;
 }
 
 .centered-evenly-column {
