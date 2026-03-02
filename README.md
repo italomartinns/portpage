@@ -4,8 +4,8 @@ A curated space showcasing my work, projects, and creative journey.
 
 ## 🚀 What's Coming
 
-- 🎨 **Projects**: A showcase of my work
-- 💡 **Ideas**: Experiments and side projects
+👨🏻‍💻 **Projects**: A showcase of my work  
+💡 **Ideas**: Experiments and side projects
 
 ## ⚠️ Stay Tuned
 
