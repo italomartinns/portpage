@@ -120,7 +120,7 @@ section p {
     justify-content: space-around;
     display: flex;
     max-width: 1920px;
-    min-height: 800px;
+    min-height: 700px;
     background-image: url("pics/sec1_bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,8 +155,8 @@ section p {
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
-    background: #360000;
-    min-height: 500px;
+    background: #2b0000;
+    min-height: 700px;
 }
 .sec2-article {
     margin: 0px 20px 20px 20px;
@@ -209,8 +209,8 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 500px;
-    background: linear-gradient(135deg, #300000 40%, #a00000 100%);
+    min-height: 700px;
+    background: linear-gradient(135deg, #270000 50%, #af0000 100%);
 }
 .sec3 .contact-info {
     background: rgba(0,0,0,0.6);
