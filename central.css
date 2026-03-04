@@ -4,11 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons&display=swap');
 
-
 /* RESET CSS */
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     border: 0;
     font-size: 1em;
     font-weight: normal;
@@ -23,6 +22,7 @@ body {
     color: white;
     font-family: 'Play', sans-serif;
 }
+
 
 .botao {
     background-color: transparent;
@@ -66,7 +66,6 @@ header {
     color: white;
 }
 header img {
-    position: absolute;
     height: 35px;
     margin: 10px;
     pointer-events: none;
@@ -82,7 +81,6 @@ header h1 {
     display: flex;
     align-items: center;
     user-select: none;
-    height: 100%;
 }
 
 nav ul {
@@ -90,11 +88,11 @@ nav ul {
     flex-direction: row;
 }
 nav li {
-    margin-right: 20px;
     text-transform: uppercase;
     font-size: 10pt;
 }
 nav a {
+    margin: 0px 10px;
     color: white;
     height: 100%;
     padding: 20px 0px;
@@ -138,14 +136,13 @@ section p {
     border-radius: 10px;
 }
 .sec1-box {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .sec1-box img {
     user-select: none;
-    height: 300px;
+    height: 280px;
 }
 
 .sec2 {

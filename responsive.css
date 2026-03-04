@@ -1,0 +1,112 @@
+/* RESPONSIVE CONFIGURATIONS */
+
+.menu-toggle, .support-flex {
+    display: none;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-family: 'Material Icons';
+    font-size: 24pt;
+    user-select: none;
+}
+.hamburger::before {
+    content: 'menu';
+}
+
+/* ULTRAWIDE: (>=1920) */
+@media (min-width: 1920px) {
+
+}
+
+/* TABLET: (768px-1024px) */
+@media (max-width: 1024px) {
+    .sec1 {
+        background-image: none; /*remove later*/
+        background-color: purple; /*remove later*/
+    }
+    .sec2 {
+        flex-direction: column;
+    }
+    .sec2-article {
+        margin: 40px 0px;
+    }
+}
+
+/* MOBILE: (<=768px) */
+@media (max-width: 768px) {
+    .support-flex {
+        display: flex;
+        font-family: 'Material Icons';
+        font-size: 24pt;
+        color: rgba(255, 255, 255, 0);
+        margin: 10px;
+        user-select: none;
+    }
+    header h1 {
+        display: none;
+    }
+    header {
+        position: fixed;
+        justify-content: space-between;
+    }
+    .hamburger {
+        margin: 10px;
+        display: block;
+    }
+    .header-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px 0;
+    }
+    .header-links a {
+        margin: 0;
+        display: block;
+        padding: 14px 0;
+        width: 100%;
+    }
+    .header-links a:hover {
+        background-color: rgb(255, 255, 255); /*remove later*/
+    }
+    #menu-toggle:checked ~ .header-links {
+        display: block;
+    }
+    #menu-toggle:checked ~ .hamburger::before {
+        content: 'close';
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+    .sec1 {
+        flex-direction: column;
+        background-color: blue; /*remove later*/
+    }
+    .sec1-content {
+        margin-top: 80px;
+        width: 80%;
+    }
+    .sec1-box img {
+        height: 200px;
+    }
+}
+
+/* MOBILE SMALLER: (<=480px) */
+@media (max-width: 480px) {
+    .sec1 {
+        background-color: yellow; /*remove later*/
+    }
+}
