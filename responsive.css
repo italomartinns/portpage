@@ -1,5 +1,4 @@
 /* RESPONSIVE CONFIGURATIONS */
-
 .menu-toggle, .support-flex {
     display: none;
 }
@@ -21,10 +20,6 @@
 
 /* TABLET: (768px-1024px) */
 @media (max-width: 1024px) {
-    .sec1 {
-        background-image: none; /*remove later*/
-        background-color: purple; /*remove later*/
-    }
     .sec2 {
         flex-direction: column;
     }
@@ -69,8 +64,15 @@
         padding: 14px 0;
         width: 100%;
     }
-    .header-links a:hover {
-        background-color: rgb(255, 255, 255); /*remove later*/
+    .header-links nav a::after {
+        right: auto;
+        left: 50%;
+        width: min(100%, 110px);
+        transform: translateX(-50%) scaleX(0);
+    }
+    .header-links nav a:hover::after,
+    .header-links nav a:focus-visible::after {
+        transform: translateX(-50%) scaleX(1);
     }
     #menu-toggle:checked ~ .header-links {
         display: block;
@@ -93,7 +95,6 @@
     }
     .sec1 {
         flex-direction: column;
-        background-color: blue; /*remove later*/
     }
     .sec1-content {
         margin-top: 80px;
@@ -106,7 +107,24 @@
 
 /* MOBILE SMALLER: (<=480px) */
 @media (max-width: 480px) {
-    .sec1 {
-        background-color: yellow; /*remove later*/
+    .sec3 {
+        min-height: 0;
+        padding: 48px 20px;
+    }
+    .sec3 .contact-info {
+        flex-direction: column;
+        gap: 26px;
+        padding: 32px 24px;
+        text-align: center;
+    }
+    .sec3 img {
+        width: 96px;
+        height: 96px;
+    }
+    .sec3::before {
+        width: 110vw;
+    }
+    .sec3::after {
+        width: 80vw;
     }
 }
