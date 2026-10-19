@@ -1,4 +1,4 @@
-# ❤️‍🔥 My Portfolio
+# My Portfolio
 
 A curated space showcasing my work, projects, and creative journey.
 
